@@ -1,0 +1,34 @@
+{$CLEO .cs}
+{$USE CLEO+}
+
+nop 
+
+:Noname_2
+if 
+  Game.IsPcVersion
+goto_if_false @Noname_95
+wait 0
+if 
+  Pad.IsKeyJustPressed(KeyCode.Insert)
+goto_if_false @Noname_88
+Camera.SetCameraControl(False)
+
+:Noname_38
+if 
+  Game.IsPcVersion
+goto_if_false @Noname_88
+wait 0
+if 
+  Pad.IsKeyJustPressed(KeyCode.Insert)
+goto_if_false @Noname_81
+Camera.SetCameraControl(True)
+goto @Noname_88
+
+:Noname_81
+goto @Noname_38
+
+:Noname_88
+goto @Noname_2
+
+:Noname_95
+terminate_this_custom_script 

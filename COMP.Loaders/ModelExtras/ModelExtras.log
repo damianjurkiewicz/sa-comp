@@ -1,0 +1,69 @@
+Starting ModelExtras v2.1-beta (Patron Build) (Sep 26 2025)
+Author: Grinch_
+Discord: https://discord.gg/AduJVdyqCD
+Patreon: https://www.patreon.com/grinch_
+More Info: https://github.com/user-grinch/ModelExtras
+Date: 2025-10-21 Time: 19:20
+
+
+Donators:
+- Agha
+- berrymuffin
+- blackOSBoris Ilincic
+- Damix
+- Dustin Eastwood
+- Dwolf98
+- Francisco Flores
+- KaiQ
+- MC Silver
+- Osama aj
+- Pol3 Million
+- Seemann
+- spdfnpe
+- 14todoeltiempoPATREON
+
+Core->
+  ModelVersionCheck
+
+Common Features->
+  TextureRemaper
+  ModelRandomizer
+
+Ped Features->
+
+Bike Features->
+  AnimatedBrakes
+  AnimatedClutch
+  AnimatedClutch
+  RotatingHandleBar
+
+Vehicle Features->
+  AnimatedChain
+  AnimatedDoor
+  AnimatedGasMeter
+  AnimatedGearMeter
+  AnimatedOdoMeter
+  AnimatedRpmMeter
+  AnimatedSpeedMeter
+  AnimatedSpoiler
+  AnimatedTurboMeter
+  BackfireEffect
+  DirtFX
+  HDLicensePlate
+  IVFCarcols
+  RotatingSteeringWheel
+  RotatingWheelHubs
+  StandardLights
+  SirenLights
+  SoundEffects
+  Spotlights
+
+Weapon Features->
+  BodyStateVariation
+  CustomSounds
+
+[I] Enable 'VerboseLogging' in ModelExtras.ini to display model-related errors.
+[I] GrinchTrainerSA found. Registering...
+[I] Loading data files from ModelExtras/data...
+
+[I] Loading data files from modloader...

@@ -1,0 +1,16 @@
+[Features]
+SpawnWithTunes = false
+
+[Menu]
+LastUpdateChecked = 21
+
+    [Menu.Navigation]
+    PageID = 0
+
+[Window.Pos]
+X = 109.0
+Y = 177.0
+
+[Window.Size]
+X = 1479.0
+Y = 805.0

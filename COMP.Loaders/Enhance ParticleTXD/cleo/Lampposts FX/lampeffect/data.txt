@@ -1,0 +1,2 @@
+IDE DATA\MAPS\leveldes\lampeffect.IDE
+COLFILE 0 data\maps\lampeffect.col

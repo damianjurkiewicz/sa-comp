@@ -1,0 +1,45 @@
+#------------------------------------------#
+# FxsFuncs by Junior_Djjr - MixMods.com.br #
+#------------------------------------------#
+# You can create as many .dat files on the .asi folder as you want.
+#
+# [fx name] [x] [y] [z] [rx] [ry] [rz] [rw] [radius] [flags]
+# flags:
+# 0x1 ONLY_DAY
+# 0x2 ONLY_NIGHT
+# 0x4 REMOVE_BY_CLOSE
+# 0x8 REMOVE_INSTANTLY
+# 0x10 USE_SECOND_FADE
+
+Places
+End
+
+# [fx name day] [fx name night] [x] [y] [z] [rx] [ry] [rz] [rw] [radius] [flags]
+
+PlacesTimed
+crsd_d1   crsd_n1  -35.3 -2580   44.8 0 0 0 0 1300  0xC
+crsd_d2   crsd_n2 -322.3 -1718   14.8 0 0 0 0 1300  0xC
+crsd_d3   crsd_n3  -86.7 -1425   16.6 0 0 0 0 1300  0xC
+crsd_d4   crsd_n4 -381.7  -837   28.6 0 0 0 0 1300  0xC
+crsd_d5   crsd_n5   -720 -1465     68 0 0 0 0 1300  0xC
+crsd_d6   crsd_n6    124  -585     27 0 0 0 0 1300  0xC
+crsd_d7   crsd_n7    423  -583     40 0 0 0 0 1300  0xC
+crsd_d8   crsd_n8   1228  -275     20 0 0 0 0 1300  0xC
+crsd_d9   crsd_n9    525  -140     40 0 0 0 0 1300  0xC
+crsd_d10 crsd_n10   1640   132     25 0 0 0 0 1300  0xC
+crsd_d11 crsd_n11   2345    45     25 0 0 0 0 1300  0xC
+crsd_d12 crsd_n12    258 -1280     85 0 0 0 0 1300  0xC
+crsd_d13 crsd_n13    288 -1265     85 0 0 0 0 1300  0xC
+crsd_d14 crsd_n14    368 -1150     80 0 0 0 0 1300  0xC
+crsd_d15 crsd_n15    600 -1025     80 0 0 0 0 1300  0xC
+crsd_d16 crsd_n16    800  -885     80 0 0 0 0 1300  0xC
+crsd_d17 crsd_n17    910  -810    110 0 0 0 0 1300  0xC
+crsd_d18 crsd_n18   1100  -700    130 0 0 0 0 1300  0xC
+crsd_d19 crsd_n19   1500  -545     95 0 0 0 0 1300  0xC
+crsd_d20 crsd_n20   1400  -750    110 0 0 0 0 1300  0xC
+crsd_d21 crsd_n21   1430  -900     60 0 0 0 0 1300  0xC
+crsd_d22 crsd_n22    200 -1670     20 0 0 0 0 1300  0xC
+crsd_d23 crsd_n23    500 -1700     20 0 0 0 0 1300  0xC
+crsd_d24 crsd_n24    350 -1550     50 0 0 0 0 1300  0xC
+crsd_d25 crsd_n25    300 -1450     30 0 0 0 0 1300  0xC 
+End

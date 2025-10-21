@@ -1,0 +1,85 @@
+[2025-10-21 21:20:51.656] [Logger] [info] 
+[2025-10-21 21:20:51.656] [Logger] [error] Unhandled exception at 0x76294044 (0xe06d7363)
+[2025-10-21 21:20:51.656] [Logger] [info] Listing mods below, 
+[2025-10-21 21:20:51.656] [Logger] [info] C:\Users\maddj\Desktop\COMP\$fastloader.asi
+[2025-10-21 21:20:51.656] [Logger] [info] C:\Users\maddj\Desktop\COMP\$fastman92limitAdjuster.asi
+[2025-10-21 21:20:51.656] [Logger] [info] C:\Users\maddj\Desktop\COMP\bass.dll
+[2025-10-21 21:20:51.656] [Logger] [info] C:\Users\maddj\Desktop\COMP\CLEO\CLEO+.cleo
+[2025-10-21 21:20:51.656] [Logger] [info] C:\Users\maddj\Desktop\COMP\CLEO\FileSystemOperations.cleo
+[2025-10-21 21:20:51.656] [Logger] [info] C:\Users\maddj\Desktop\COMP\CLEO\IniFiles.cleo
+[2025-10-21 21:20:51.656] [Logger] [info] C:\Users\maddj\Desktop\COMP\CLEO\IntOperations.cleo
+[2025-10-21 21:20:51.657] [Logger] [info] C:\Users\maddj\Desktop\COMP\cleo.asi
+[2025-10-21 21:20:51.657] [Logger] [info] C:\Users\maddj\Desktop\COMP\CrashInfo.SA.asi
+[2025-10-21 21:20:51.658] [Logger] [info] C:\Users\maddj\Desktop\COMP\DllTricks.dll
+[2025-10-21 21:20:51.658] [Logger] [info] C:\Users\maddj\Desktop\COMP\eax.dll
+[2025-10-21 21:20:51.658] [Logger] [info] C:\Users\maddj\Desktop\COMP\imfast.asi
+[2025-10-21 21:20:51.658] [Logger] [info] C:\Users\maddj\Desktop\COMP\libcurl.dll
+[2025-10-21 21:20:51.658] [Logger] [info] C:\Users\maddj\Desktop\COMP\MinHook.x86.dll
+[2025-10-21 21:20:51.658] [Logger] [info] C:\Users\maddj\Desktop\COMP\modloader\.data\plugins\gta3\std.asi.dll
+[2025-10-21 21:20:51.658] [Logger] [info] C:\Users\maddj\Desktop\COMP\modloader\.data\plugins\gta3\std.bank.dll
+[2025-10-21 21:20:51.658] [Logger] [info] C:\Users\maddj\Desktop\COMP\modloader\.data\plugins\gta3\std.data.dll
+[2025-10-21 21:20:51.658] [Logger] [info] C:\Users\maddj\Desktop\COMP\modloader\.data\plugins\gta3\std.fx.dll
+[2025-10-21 21:20:51.658] [Logger] [info] C:\Users\maddj\Desktop\COMP\modloader\.data\plugins\gta3\std.movies.dll
+[2025-10-21 21:20:51.658] [Logger] [info] C:\Users\maddj\Desktop\COMP\modloader\.data\plugins\gta3\std.scm.dll
+[2025-10-21 21:20:51.658] [Logger] [info] C:\Users\maddj\Desktop\COMP\modloader\.data\plugins\gta3\std.sprites.dll
+[2025-10-21 21:20:51.658] [Logger] [info] C:\Users\maddj\Desktop\COMP\modloader\.data\plugins\gta3\std.stream.dll
+[2025-10-21 21:20:51.658] [Logger] [info] C:\Users\maddj\Desktop\COMP\modloader\.data\plugins\gta3\std.text.dll
+[2025-10-21 21:20:51.658] [Logger] [info] C:\Users\maddj\Desktop\COMP\modloader\.data\plugins\gta3\std.tracks.dll
+[2025-10-21 21:20:51.658] [Logger] [info] C:\Users\maddj\Desktop\COMP\modloader\COMP.Critical\Open Limit Adjuster\III.VC.SA.LimitAdjuster.asi
+[2025-10-21 21:20:51.659] [Logger] [info] C:\Users\maddj\Desktop\COMP\modloader\COMP.Critical\PortableGTA\portablegta.asi
+[2025-10-21 21:20:51.659] [Logger] [info] C:\Users\maddj\Desktop\COMP\modloader\COMP.Critical\SilentPatch\SilentPatchSA.asi
+[2025-10-21 21:20:51.659] [Logger] [info] C:\Users\maddj\Desktop\COMP\modloader\COMP.Critical\Widescreen Fix\GTASA.WidescreenFix.asi
+[2025-10-21 21:20:51.659] [Logger] [info] C:\Users\maddj\Desktop\COMP\modloader\COMP.Critical\Windowed Mode\III.VC.SA.WindowedMode.asi
+[2025-10-21 21:20:51.659] [Logger] [info] C:\Users\maddj\Desktop\COMP\modloader\COMP.Fixes\FramerateVigilante\FramerateVigilante.SA.asi
+[2025-10-21 21:20:51.659] [Logger] [info] C:\Users\maddj\Desktop\COMP\modloader\COMP.Fixes\GrinchPatchSA\GrinchPatchSA.asi
+[2025-10-21 21:20:51.659] [Logger] [info] C:\Users\maddj\Desktop\COMP\modloader\COMP.Fixes\Improved Streaming\ImprovedStreaming.SA.asi
+[2025-10-21 21:20:51.659] [Logger] [info] C:\Users\maddj\Desktop\COMP\modloader\COMP.Fixes\Project2DFX\SALodLights.asi
+[2025-10-21 21:20:51.659] [Logger] [info] C:\Users\maddj\Desktop\COMP\modloader\COMP.Fixes\SkyGfx\skygfx.asi
+[2025-10-21 21:20:51.659] [Logger] [info] C:\Users\maddj\Desktop\COMP\modloader\COMP.Fixes\SkyGrad\skygrad.asi
+[2025-10-21 21:20:51.659] [Logger] [info] C:\Users\maddj\Desktop\COMP\modloader\COMP.Loaders\EffectLoader\EffectLoader.asi
+[2025-10-21 21:20:51.659] [Logger] [info] C:\Users\maddj\Desktop\COMP\modloader\COMP.Loaders\Enhance ParticleTXD\cleo\Enhance ParticleTXD (Junior_Djjr).cs
+[2025-10-21 21:20:51.659] [Logger] [info] C:\Users\maddj\Desktop\COMP\modloader\COMP.Loaders\Enhance ParticleTXD\cleo\Lampposts FX\cleo\Lamppost FX.cs
+[2025-10-21 21:20:51.660] [Logger] [info] C:\Users\maddj\Desktop\COMP\modloader\COMP.Loaders\Enhance ParticleTXD\cleo\Lampposts FX\Disable SilentPatch Corona Rotation\cleo\Disable_SilentPatch_Corona_Rotation.cs
+[2025-10-21 21:20:51.660] [Logger] [info] C:\Users\maddj\Desktop\COMP\modloader\COMP.Loaders\FxsFuncs\FxsFuncs.asi
+[2025-10-21 21:20:51.660] [Logger] [info] C:\Users\maddj\Desktop\COMP\modloader\COMP.Loaders\IMFX\imfx.asi
+[2025-10-21 21:20:51.660] [Logger] [info] C:\Users\maddj\Desktop\COMP\modloader\COMP.Loaders\ModelExtras\ModelExtras.asi
+[2025-10-21 21:20:51.660] [Logger] [info] C:\Users\maddj\Desktop\COMP\modloader\COMP.Loaders\VehFuncs\gsx.asi
+[2025-10-21 21:20:51.660] [Logger] [info] C:\Users\maddj\Desktop\COMP\modloader\COMP.Loaders\VehFuncs\VehFuncs.asi
+[2025-10-21 21:20:51.660] [Logger] [info] C:\Users\maddj\Desktop\COMP\modloader\COMP.Sets\MixSets\MixSets.asi
+[2025-10-21 21:20:51.660] [Logger] [info] C:\Users\maddj\Desktop\COMP\modloader\COMP.Sets\TweaksSAv95\cleo\TweaksSAv95.cs
+[2025-10-21 21:20:51.661] [Logger] [info] C:\Users\maddj\Desktop\COMP\modloader\COMP.Tweaks\NoNewCityAreaWantedLevel\CLEO\NoForbiddenAreaWantedLevel.cs
+[2025-10-21 21:20:51.661] [Logger] [info] C:\Users\maddj\Desktop\COMP\modloader\COMP.Tweaks\Vehicle Immunities\CLEO\NoCarExplosion.cs
+[2025-10-21 21:20:51.661] [Logger] [info] C:\Users\maddj\Desktop\COMP\modloader\COMP.Tweaks\Vehicle Immunities\CLEO\Vehicle Immunities (Junior_Djjr).cs
+[2025-10-21 21:20:51.661] [Logger] [info] C:\Users\maddj\Desktop\COMP\modloader\COMP.Utility\Coords\cleo\Coords.cs
+[2025-10-21 21:20:51.661] [Logger] [info] C:\Users\maddj\Desktop\COMP\modloader\COMP.Utility\Disable Camera (Insert)\cleo\Disable camera (Insert key).cs
+[2025-10-21 21:20:51.661] [Logger] [info] C:\Users\maddj\Desktop\COMP\modloader\COMP.Utility\FPS Counter\cleo\FPS Counter.cs
+[2025-10-21 21:20:51.661] [Logger] [info] C:\Users\maddj\Desktop\COMP\modloader\COMP.Utility\Generate Free IDs List\CLEO\Generate Free IDs List.cs
+[2025-10-21 21:20:51.661] [Logger] [info] C:\Users\maddj\Desktop\COMP\modloader\COMP.Utility\GrinchTrainerSA\GrinchTrainerSA.asi
+[2025-10-21 21:20:51.661] [Logger] [info] C:\Users\maddj\Desktop\COMP\modloader\COMP.Utility\Map Coords\MapCoords.asi
+[2025-10-21 21:20:51.661] [Logger] [info] C:\Users\maddj\Desktop\COMP\modloader\COMP.Utility\Name Vehicle Spawner\cleo\Name Vehicle Spawner (Junior_Djjr).cs
+[2025-10-21 21:20:51.662] [Logger] [info] C:\Users\maddj\Desktop\COMP\modloader\COMP.Utility\RZL Trainer\cleo\RZL-Trainer.cs
+[2025-10-21 21:20:51.662] [Logger] [info] C:\Users\maddj\Desktop\COMP\modloader\COMP.Utility\View Models Info\ViewModelsInfo.SA.asi
+[2025-10-21 21:20:51.664] [Logger] [info] C:\Users\maddj\Desktop\COMP\modloader\Proper Fixes\Proper Fixes\ProperFixes.asi
+[2025-10-21 21:20:51.665] [Logger] [info] C:\Users\maddj\Desktop\COMP\modloader.asi
+[2025-10-21 21:20:51.665] [Logger] [info] C:\Users\maddj\Desktop\COMP\ogg.dll
+[2025-10-21 21:20:51.666] [Logger] [info] C:\Users\maddj\Desktop\COMP\vorbis.dll
+[2025-10-21 21:20:51.666] [Logger] [info] C:\Users\maddj\Desktop\COMP\vorbisFile.dll
+[2025-10-21 21:20:51.666] [Logger] [info] C:\Users\maddj\Desktop\COMP\vorbishooked.dll
+[2025-10-21 21:20:51.666] [Logger] [info] C:\Users\maddj\Desktop\COMP\zlib1.dll
+Starting Grinch Trainer v1.1-beta(Patron) (Jun 29 2025)
+Author: Grinch_
+Discord: https://discord.gg/ZzW7kmf
+Patreon: https://www.patreon.com/grinch_
+More Info: https://github.com/user-grinch/GrinchTrainer-III-VC-SA
+Date: 2025-10-21 Time: 19:20
+
+[I] Game detected: GTA San Andreas 1.0 US
+[I] Install location: Modloader
+[I] FLA installed: True
+[I] Modloader installed: True
+[I] Renderhook installed: False
+[I] OLA installed: True
+
+[I] Searching for languages...
+[I] Found locale: English
+[I] Found locale: Portugues

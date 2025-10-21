@@ -1,0 +1,11 @@
+{$CLEO .cs}
+0000: NOP
+:Do
+wait 0
+if
+    0ADC:   test_cheat "TWSA"
+then
+    0A92: stream_custom_script "TweaksSAv92.cs"
+    0AD1: show_formatted_text_highpriority "Restarting TweaksSA" time 2000
+end
+jump @Do

@@ -1,0 +1,270 @@
+version 95.0
+
+- Option to show moon during any weather (ini: Visual->MoonAnyWeather)
+- Moon rise and moon set time. Set when the Moon appears and disappears. Also make the Moon brighter and
+it is always white (RealSkybox makes it blue sometimes, this options fix this) (ini: Visual->MoonTimeTweaks)
+- disable FOV change based on vehicle's speed (ini: CameraTweaks->DontChangeFOVspeed)
+- set how long the camera would travel to new position/view.
+Cam switch (transition) duration when exiting the car. Also affects transition in Manual Drive-by Refixed from drive-by mode to "behind car" mode. (ini: CameraTweaks->CamTransDurationExCar)
+Cam switch (transition) duration when entering the car. (ini: CameraTweaks->CamTransDurationEnCar)
+Faster aiming (ini: CameraTweaks->FasterAimingTransition)
+
+- camera tweaks added (Camera Tweaks section at end of ini file).
+A little guide on settings CameraTweaks settings.
+Height adjustment is somewhat global. CamHeightCars will affect cars, quads, monster, trains. The others are pretty obvious.
+View1CarDist and View1CarAngle - Here you set distance and angle for every camera position (the ones that you change by pressing Change Camera key) ecxept bumper cam. Unfortunately, you can't change height for every cam position. It is constant for all 3 of them.
+
+- Луна отображается при любой погоде (ini: Visual->MoonAnyWeather)
+- настраиваемое время восхода и захода Луны. Так же делает Луну ярче и она всегда белая (RealSkybox иногда меняет её цвет, это тоже исправляется (ini: Visual->MoonTimeTweaks)
+- отключение изменения FOV (ширины обзора) при изменении скорости машины (ini: CameraTweaks->DontChangeFOVspeed)
+- настройка скорости изменения позиции камеры
+Изменение скорости камеры при выходе из авто. Также влияет на Manual Drive-by Refixed - меняет скорость переключения из 
+drive-by в обычный вид камеры. (ini: CameraTweaks->CamTransDurationExCar)
+Изменение скорости камеры при посадке в машину. (ini: CameraTweaks->CamTransDurationEnCar)
+Ускорение прицеливания (ini: CameraTweaks->FasterAimingTransition)
+
+- добавлен раздел с настройками камеры (Camera Tweaks в конце ini файла).
+Небольшая инструкция по использованию Camera Tweaks).
+Настройка выстоы (Height) в некотором роде глобальная. CamHeightCars влияет на машины, квадрики, монстра, поезда. С остальными всё понятно из названия.  View1CarDist и View1CarAngle - тут настраивается расстояние и угол для каждого положения камеры (которые переключаются нажатием Change Camera), за исключением камеры на бампере. К сожалению, высоту нельзя настроить для каждого положения одельно.
+
+
+
+version 91.0
+- set at what range panic will be triggered by Hydra and other air vehicles (ini: Gameplay->FlyingVehPanicRange)
+- option to make breath bar always visible (ini: Visual->BreathBarAlways)
+- Ped shooting rate. Sets how fast peds will fire a gun. (ini: Gameplay->PedShootingRate)
+- Footsplash particles. The particles that are created when CJ or peds step on wet ground. (ini: Visual->Footsplash*)
+- vehicle model frequency - sets how many vehicles of the same model can be spawned at the same time. For example, if you set it to 1 and you are in a Huntley - no other Huntleys will spawn. To better tweak this part you can use spawn/despawn offscreen settings in MixSets (ini: Gameplay->VehicleModelFreq)
+- lock radar map rotation, North always on top (ini: Visual->LockRadar)
+- customizable bullet traces for peds and heli color, thickness, duration (ini: Visual->Traces*)
+- disable weapon click sound when trying to shoot sniper or rocket launcher without aiming (ini: Audio->DisableWeaponClick)
+- disable area names display (ini: Visual->DisableAreaNames)
+
+- fixed and moved DisableVehicleNames setting to [Visual] section
+- some minor script fixes
+- sound volume settings for hissing sound added (ini: Audio->EngineHissingSound)
+
+- настроить радиус от Hydra и другого воздушного транспорта, в котором педы будут убегать в панике (ini: Gameplay->FlyingVehPanicRange)
+- шкала дыхания всегда на экране (ini: Visual->BreathBarAlways)
+- настройка скорости стрельбы из оружия для педов (ini: Gameplay->PedShootingRate)
+- настройка брызг от ног, т.е. когда CJ или педы наступают на мокрую поверхность (в дождь) (ini: Visual -> Footsplash*)
+- настройка частоты появления моделей авто, например, если поставить 1 и вы в Huntley - другие Huntley в траффике не появятся. Для лучшей настройки можно использовать spawn/despawn offscreen в MixSets (ini: Gameplay->VehicleModelFreq)
+- отключить вращение радара по принципу "север всегда сверху" (ini: Visual->LockRadar)
+- настройка трассеров для педов и вертолётов - цвет, толщина, длительность (ini: Visual->Traces*)
+- возможность убрать щелчок оружия, если нажать выстрел на снайперке и ракетах без прицеливания (ini: Audio->DisableWeaponClick)
+- можно отключить отображение названия зоны/района (ini: Visual->DisableAreaNames)
+
+- DisableVehicleNames исправлена и перемещена в раздел [Visual]
+- небольшие изменения в скрипте
+- добавлена возможность изменять громкость шипящего звука двигателя ini: Audio->EngineHissingSound
+
+version 82.0
+- Restore hissing sound when smoke comes out of the engine (ini: Audio->EngineHissingSound)
+- Change flat tyre sound volume (ini: Audio->FlatTyreVolume)
+- Mod renamed to TweaksSA to avoid confusion
+
+- Восстановление шипящиего звука, когда двигатель дымится (ini: Audio->EngineHissingSound)
+- Изменение громкости звука спущенного колеса (ini: Audio->FlatTyreVolume)
+- Мод переименован в TweaksSA, чтобы избежать путаницы
+
+version 80.0
+- Change sound volume level of raindrops on vehicles (ini: Audio->RainOnVehiclesVolume)
+- Headbopping (peds bop head in car) settings. You can disable headbopping completely or slow it down so it looks like head movement, but it affects armbopping as well (ini: Visual->Headbopping)
+- Set the delay (in ms) between rolls and chance that a car stealing criminal event will happen
+(ini: Gameplay->CarStealEventDelay and Gameplay->CarStealEventChance)
+- Criminals can pull CJ out and steal his car. NOTE: it will affect mission peds, better use it
+as an after endgame feature. (ini: Gameplay->PlayerCanBeJacked)
+- Change chance that after an accident a ped will get out of a car with a weapon
+(ini: Gameplay->RRageWeaponChance)
+
+- Gameplay->ExplosionDelay setting now affects car, boats, bikes and quads. Previously only cars were affected.
+
+- Изменение громкости звука дождя на транспорте (ini: Audio->RainOnVehiclesVolume)
+- Настройка (отключение) headbopping. Это когда педы в авто болтают головой, типа под музыку.
+Можно полностью отключить движения головы или значительно их замедлить. При замедлении это выглядит так, как будто они просто медленно двигают головой. К сожалению, замедление влияет и на постукивание рукой по двери. (ini: Visual->Headbopping)
+- Изменение задержки между проверкой шанса (и самого шанск) на то, что произойдёт событие "кража авто". Т.е. это когда пед-преступник угоняет рандомную машину (ini: Gameplay->CarStealEventDelay and Gameplay->CarStealEventChance)
+- Преступники могут выкинуть CJ из машины. Это может влиять и на педов в миссиях, так что лучше использовать эту настройку только после окончания сюжета (ini: Gameplay->PlayerCanBeJacked)
+- Изменение шанса на то, что после столкновения пед выйдет из авто с оружием(ini: Gameplay->RRageWeaponChance)
+
+- Настройка Gameplay->ExplosionDelay (задержка взрыва транспорта) теперь влияет на машины, лодки, мотоциклы и квадроциклы. До этого только машины взрывались с задержкой
+
+
+
+version 75.0
+- added TweaksV-vanilla_settings.ini file that has all TweaksV tweaks disabled. For references only.
+- option to rise the chance to spawn traffic vehicles with more passengers (ini: Gameplay->MorePassengers)
+- when wasted or busted with special clothes on - CJ will respawn wearing them (ini: Gameplay->KeepSpecialClothes) 
+- when CJ runs out of ammo - he will switch to unarmed instead of switching to next weapon (ini: Gameplay->SwitchToUnarmed)
+- option to disable gang handsign animation (ini: Visual->NoHandsignAnim)
+- option to force wanted stars stay on screen, even with no wanted level (ini: Visual->WantedStarsAlways)
+
+version 70.0
+- fixed a bug when game crashed at certain locations with wanted level
+- change moon size. Also disables Moon's reaction to sniper bullets.
+(ini: Visual->MoonSize)
+- vanilla game limits CarGenerators modelID to 630. 
+  FLA also fixes this (#Accept any ID for car generator = 0)
+  If you don't use FLA or for any other reasons - max modelID can be increased to 65535 with   TweaksV (ini: Gameplay->CarGenMaxIDfix)
+
+- improved rendering of headlights beams on water (ini: Visual->HeadlightsOnWater)
+- blood pool around peds will appear faster (ini: Visual->FastBloodPool)
+- disable horizontal and vertical lines on map screen (ini: Visual->DisableMapLines)
+
+version 65.0
+- change cop's (the one that's on the nose) position in the boat (ini: Police->BoatCopPos)
+- by default, cars with gang members as drivers drive with headlights off.Now we can change that. 
+  (ini: Visual->GangCarsHeadlights)
+- fix cars spawning in front when driving and looking back (ini: Gameplay->CarSpawnFix)
+  Note: it is uncertain what this value represents, but it works. Game default value is 38.0
+  Try setting it to 16.0 and see how bad it could be. ) Optimal value is 48.0-50.0
+- (for SilentPatch) disable PS2 rotating coronas (ini: Visual->SPDisableCoronaRotation)
+- option to remove ped's head when headshotting with any weapon (ini: Visual->RemoveHeadWithAnyWeapon)
+
+version 60.0
+- change lightning frequency, relative value. Game uses 200 as default. Setting it to 50
+will make lightning appear ~4x times less often. 0 seems to disable lightning 
+(ini:Visual->LightningFrequency)
+- recruited gang members don't move hands when following CJ (ini: Visual->GangDontMoveHands)
+- create a single money pickup (one pack of bills)for ped drops instead of multiple packs
+(ini: Visual->SingleMoneyPickup)
+- change the chance that a gang member spawns with weapon. 
+  By default, the game uses 33% chance. (ini: Gameplay->GangWeaponChance)
+- option to make boats spawn clean, without dirt on them (ini: Visual->BoatsSpawnClean)
+
+version 55.0
+- make water creatures visible from the shore, transparent water mod required
+  (ini: Visual->WaterCreaturesVisibility)
+- change intensity of camera shake when explosion is near the player (ini: Visual->CamShake***)
+- sniper crosshair tweaks (ini: Visual->EnableSCtweaks)
+  This one is for those, who make their custom crosshairs. 
+  To draw sniper crosshair the game uses only upper-left section of the crosshair and then
+  copies and rotates it three times. Now you can disable any section or change it's color.
+- option to change grenade explosion delay (ini: Gameplay->GrenadeFuseTime)
+  Note: if you are using GrenadeMod - you should change the value there as well
+- option to disable stats pop up box (ini: Visual->DontShowStats)
+
+version 50.0
+- option to disable black area around sniper crosshair (ini: Visual->NoSniperViewBorder)
+  Requires custom crosshair. With vanilla it would look bad.
+- option to disable rendering of three spheres (like near Vank Hoff hotel - see screenshots)
+  (ini: Visual->Disable3Spheres)
+- option to change Enex marker color, only Red and Green values available
+  (ini: Visual->EnexConeR(G))
+- option to change sphere color (ini: Visual->SphereColorR(G,B))
+- In some garages the camera stays outside. Now you can disable this behavior
+ (ini: Visual->DisableGarageCam)
+- Keep weapons when busted (ini: Gameplay->KeepWeaponsWhenBusted)
+- Keep weapons when wasted (ini: Gameplay->KeepWeaponsWhenWasted)
+  When any of the above options is disabled - the game would work as it used to, taking gilfriend
+  bonuses into account.
+
+- Disable distance fog. (ini: Visual->DisableFog)
+  Note: to get results like on the screenshot you have to increase drawing distance a lot
+  in Project2DFX
+
+version 45.0
+- Disable guns on Predator boat. Affects only police-controlled boats.
+ (ini: Police->DisablePredatorGuns)
+- Disable police boat loudspeaker (ini: Police->DisableBoatLoudspeaker)
+- Probabily of police heli using loudspeaker. Allowed values are 0.0 to 1.0 (game default).
+  0.0 disables it completely, in order to noticeably reduce the amount of heli "talking" you
+  have to use really low values, like 0.0005
+  (ini: Police->PoliceHeliLspProbability)
+- Rhino explosion proof - removes EP flag from Rhino, it can now be damaged by explosions 
+  as all other cars. This is intended to use with reduced Rhino damage multiplier. 
+  (ini: Gameplay->RhinoExplosionProof)
+- Don't make the car white before applying a paintjob (ini: Visual->DontRemoveColor)
+
+version 40.0
+- organized stuff inside ini file, from now on everything will be sorted by sections:
+  Gameplay, Visual, Audio, Police, Big Map
+
+  Gameplay - various stuff related to gameplay
+  Visual - visual fixes and improvements
+  Audio - audio setting (empty so far)
+  Police - everything that is related to cops
+  Big Map - big map mod stuff goes here
+
+
+- disable cops spawning around the player. Car cops still arrive as usual. Random cops
+  might still appear because they are spawned as part of peds, but that's not even
+  close to what it was. Makes the game easier, but more comfortable (ini: Gameplay->DontSpawnCops)
+- disable vehicle name display when entering vehicle (ini: Visual->DisableVehicleNames)
+- removed "apply extra air resistance" in some areas. This will allow the car to go full speed everywhere
+  (ini: DisableExtraAirResist)
+  Credits: idea - TJGM, cleo code - void, first discovery - iFarbod
+- disable wind affecting clothes - might be useful for custom clothes (ini: WindAffectsClothes)
+- SWAT position relative to heli - point where SWAT team appears and start descending, useful if you use
+non-vanilla police heli (ini:UseCustomSWATpos and settings below it)
+- Wake brightness reduced - trail on the water that CJ leaves when swimming (ini: Visual->WakeBrightness)
+- Water cannon stream made thinner (ini: Visual->WaterCannonThinner)
+- Light from missiles reduced (ini: Visual->MissileLightSmaller)
+- Peds don't drown in water (ini:PedsDontDrown) and peds swim (ini:PedsSwim)
+Makes peds don't drown when they fall in water and (if enabled) makes them swim somewhere. Unfortunately, they can't climb
+on stuff (like pier for example), and they swim in one direction without searching for a path.
+- Rhino damage multiplier. It is a multiplier that increased damage made by Rhino when it hit
+cars. Game default is 15 and it caused instant explosion or sets the car on fire on the slightest
+scratch. Now you can set it to any number you prefer (range 0 to 15). (ini: RhinoDamageMult)
+
+- update (map screen): crosshairs now work as they should on a full-screen map - they can reach the borders
+- update (map screen): option to make BACK work only when cursor is in lowest position on the screen (ini: BigMapBackFix)
+- update (map screen): SkyUI support - moves area name a bit higher, to avoid overlapping text (ini: BigMapSkyUIsupport)
+
+
+version 30.0
+- enable friendly fire (cops, gangs can damage eachother with bullets) (ini:FriendlyFire)
+  NOTE: this causes problems with drive-by - homies shoot each other
+- enable duck/crouch button when running (ini: CrouchWhenRunning)
+- disable rear end swinging on cars (ini: SwingingChassis)
+- map (the menu one) stretched to full screen, zoom in/out speed 3x, map scroll speed 2x (ini: BigMap)
+- Hydra thrusters movement speed (ini: HydraThrustersSpeed)
+
+version 25.0
+- cop vehicle coronas tweaks/siren lights appearance (Replaces Cop Vehicle Coronas mod) (ini:Visual->CopCarCoronas)
+- sprint on any surface (ini: Gameplay->Sprint Anywhere)
+- Disables cops spawning near exit when you leave any interior with wanted level.
+  NOTE: if you were followed before entering a building, most likely some of them
+  will be there when you exit. Alternatively, you can tweak how many of them will spawn.
+(ini: Police->WaitingCoppers)
+- Disable hands movement after a ped (cop, gang, whoever) kills another ped. (ini: Visual->NoHandMovement)
+- Combine Harvesters now spawn with doors unlocked (ini: Gameplay->CombineUnlocked)
+
+version 20.0
+- set police heli shooting accuracy (ini: Police->HeliShooting***)
+- set police heli shooting rate (ini: Police->HeliShooting***)
+- set how long the police heli will fly around before it starts shooting (ini: Police->HeliShooting***)
+- change how fast the car will explode after it starts burning (ini: Gameplay->ExplosionDelay)
+- reduce the speed of cars spawned on motorways (cars spawn with certain speeds that's
+supposed to match the traffic speed) - if there was a jam on the road - it resulted in
+a pile of crashed cars (ini: Gameplay->ReduceMwSpeed)
+
+version 15.0
+- Change flashing duration and flashing speed of wanted stars.
+  (ini: Visual->Duration and FlashSpeed)
+- Change how much money you loose when you get busted (set for each wanted level)
+  (ini: Police->BLevel1 - BLevel6)
+- Set the the angle at which traffic cars turn left or right when you approach
+  them with siren on. Somewhat fixes the absurd 90-degree turn that is set by R*.
+  (ini: Gameplay->SwerveAngle)
+- Disable bike cops shooting at you while they are on bikes.
+  (ini: Police->DisableBikeCopPistol)
+- Change price modifiers for each city.
+  For example, pistol in LS and SF is sold 200$ and 240$ in LV.
+  This means modifiers are 1.0 for LS and SF, 1.2 for LV. You can now change this values. Affects everything.
+  (ini: Gameplay->PriceModifiesLS - LV)
+
+version 10.0
+
+- Paint all cars. Allows you to paint any vehicle in Pay'N'Spray (bicycles, police vehicles, buses etc) (ini: Gameplay->PaintAllCars)
+- Cop tweaks. Various settings related to law enforcement (weapon, ammo, armor, shooting rate, accuracy) (ini: Police section)
+Note: changing weapon to anything outside of original weapon slot may not work - example: giving anything except pistols to foot cops
+- Heli searchlight corona size reduced (ini: Visual->CoronaSizeReduced)
+- Disable police scanner. Disables police radio chatter when player gets a wanted level (ini: Police->PoliceScanner)
+- Reduce amount of cars on motorways. The game used 1.7 multiplier when the player is on motorway and 1.0 in all   other places. This setting (if enabled) changes 1.7 to 1.0. (ini: Gameplay->ReduceMwSpeed)
+
+version 5.0
+- Time till hungry. Allows to change the time till CJ will feel hungry after eating (default 48 hours). Replaces my TTH mod (not TTH2 !!!) (ini: Gameplay->TimeTillHungry)
+- Makes car stay clean for a longer time (replaces DirtySlower mod) (ini: Visual->DirtySlower)
+- Shows ammo when it is over 9999. Shows up to 50000. (replaces Show Ammo over 9999 mod) (ini: Visual->AmmoOver9999)
+- Unlocks cop cars in traffic. Now you can pull a cop out of the car. (ini: Police->CopLock)
+- Limited ammo after you reach 100% progress. (ini: Gameplay->LimitedAmmoAfterEndgame)

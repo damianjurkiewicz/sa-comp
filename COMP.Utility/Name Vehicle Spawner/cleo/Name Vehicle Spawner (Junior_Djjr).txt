@@ -1,0 +1,284 @@
+{$CLEO .cs}
+{$USE ini}
+Alloc($PLAYER_ACTOR, 3)
+
+if 
+  not 15@ = IniFile.ReadInt("cleo\Name Vehicle Spawner.ini", "Cfg", "Key1")
+goto_if_false @Noname_65
+15@ = 80
+
+:Noname_65
+if 
+  not 16@ = IniFile.ReadInt("cleo\Name Vehicle Spawner.ini", "Cfg", "Key2")
+goto_if_false @Noname_130
+16@ = 87
+
+:Noname_130
+if 
+  not 17@ = IniFile.ReadInt("cleo\Name Vehicle Spawner.ini", "Cfg", "PutOnVehicle")
+goto_if_false @Noname_203
+17@ = 1
+
+:Noname_203
+19@ = Memory.Read(4223238, 4, False)
+if 
+  not 18@ = IniFile.ReadInt("cleo\Name Vehicle Spawner.ini", "Cfg", "Language")
+goto_if_false @Noname_286
+18@ = 2
+
+:Noname_286
+0@ = Memory.GetLabelPointer(@Noname_1965)
+Memory.Write(0@, 1, 18@, False)
+
+:Noname_308
+wait 0
+if and
+  Pad.IsKeyPressed(15@)
+  Pad.IsKeyPressed(16@)
+goto_if_false @Noname_1249
+
+:Noname_333
+  Pad.IsKeyPressed(15@)
+goto_if_false @Noname_356
+wait 0
+goto @Noname_333
+
+:Noname_356
+  Pad.IsKeyPressed(16@)
+goto_if_false @Noname_379
+wait 0
+goto @Noname_356
+
+:Noname_379
+Memory.Write(9867536, 9, 0, False)
+Player.SetControl(0, False)
+Camera.AttachToChar($PLAYER_ACTOR, 0.0, -1.0, 1.3, 0.0, 90.0, -30.0, 0.0, SwitchType.JumpCut)
+
+:Noname_440
+  not Pad.IsKeyPressed(KeyCode.Return)
+goto_if_false @Noname_1214
+wait 0
+if 
+  Char.IsInAnyCar($PLAYER_ACTOR)
+goto_if_false @Noname_478
+goto @Noname_1214
+
+:Noname_478
+0@ = Memory.GetLabelPointer(@Noname_1966)
+Memory.Write(0@, 8, 0, False)
+0@ += 7
+12@ = 8
+31@ = 0
+14@ = 0
+11@ = 9867536
+
+:Noname_537
+  12@ > 0
+goto_if_false @Noname_635
+1@ = Memory.Read(11@, 1, False)
+if 
+  1@ == 0
+goto_if_false @Noname_588
+1@ = 32
+
+:Noname_588
+Memory.Write(0@, 1, 1@, False)
+gosub @Noname_1256
+0@ -= 1
+12@ -= 1
+11@ += 1
+goto @Noname_537
+
+:Noname_635
+if 
+  14@ > 0
+goto_if_false @Noname_1076
+if 
+  17@ == 1
+goto_if_false @Noname_816
+21@, 22@, 23@ = Char.GetCoordinates($PLAYER_ACTOR)
+24@ = Char.GetHeading($PLAYER_ACTOR)
+Streaming.RequestModel(20@)
+Streaming.LoadAllModelsNow
+31@ = Car.Create(20@, 21@, 22@, 23@)
+Car.SetHeading(31@, 24@)
+14@ = Streaming.GetAreaVisible()
+Car.SetAreaVisible(31@, 14@)
+Car.SetCoordinatesNoOffset(31@, 21@, 22@, 23@)
+23@ -= 0.3
+cleo_call @Noname_1766 {numParams} 4 {params} 31@ 21@ 22@ 23@ 
+Streaming.MarkModelAsNoLongerNeeded(20@)
+Char.WarpIntoCar($PLAYER_ACTOR, 31@)
+Car.MarkAsNoLongerNeeded(31@)
+31@ = 1
+goto @Noname_821
+
+:Noname_816
+World.SpawnVehicleByCheating(20@)
+
+:Noname_821
+Memory.Write(9867536, 9, 0, False)
+if 
+  29@ > 0
+goto_if_false @Noname_966
+if 
+cleo_call @Noname_1909 {numParams} 0 {params} 
+goto_if_false @Noname_919
+Text.PrintFormattedNow("~s~'~b~%d~s~' spawned. %d", 1000, 20@, 24@)
+goto @Noname_959
+
+:Noname_919
+Text.PrintFormattedNow("~s~'~b~%d~s~' spawnado. %d", 1000, 20@, 24@)
+
+:Noname_959
+goto @Noname_1069
+
+:Noname_966
+if 
+cleo_call @Noname_1909 {numParams} 0 {params} 
+goto_if_false @Noname_1031
+Text.PrintFormattedNow("~s~'~b~%s~s~.dff' spawned.", 1000, 0@)
+goto @Noname_1069
+
+:Noname_1031
+Text.PrintFormattedNow("~s~'~b~%s~s~.dff' spawnado.", 1000, 0@)
+
+:Noname_1069
+goto @Noname_1214
+
+:Noname_1076
+if 
+  31@ == 0
+goto_if_false @Noname_1207
+if 
+cleo_call @Noname_1909 {numParams} 0 {params} 
+goto_if_false @Noname_1165
+Text.PrintFormattedNow("~s~Enter the name: '~y~%s~s~.dff'", 100, 30@)
+goto @Noname_1207
+
+:Noname_1165
+Text.PrintFormattedNow("~s~Digite o nome: '~y~%s~s~.dff'", 100, 30@)
+
+:Noname_1207
+goto @Noname_440
+
+:Noname_1214
+Camera.Restore
+wait 250
+
+:Noname_1221
+  Pad.IsKeyPressed(KeyCode.Return)
+goto_if_false @Noname_1243
+wait 0
+goto @Noname_1221
+
+:Noname_1243
+Player.SetControl(0, True)
+
+:Noname_1249
+goto @Noname_308
+
+:Noname_1256
+30@ = Memory.GetLabelPointer(@Noname_1966)
+21@ = Memory.GetVarPointer(20@)
+23@ = Memory.CallFunctionReturn(5003584, 2, 2, 21@, 0@)
+if 
+  23@ <> 0
+goto_if_false @Noname_1650
+if 
+  20@ > 1
+goto_if_false @Noname_1643
+29@ = 0
+
+:Noname_1338
+23@ = Memory.Read(23@, 4, False)
+23@ += 16
+23@ = Memory.Read(23@, 4, False)
+24@ = Memory.CallFunctionReturn(23@, 0, 0)
+if or
+  24@ == 5
+  24@ == 6
+goto_if_false @Noname_1643
+31@ = 1
+if 
+cleo_call @Noname_1909 {numParams} 0 {params} 
+goto_if_false @Noname_1527
+Text.PrintFormattedNow("~s~Enter the name: '~y~%s~s~.dff'~n~'ID %d' found. Press Enter to spawn.", 100, 0@, 20@)
+goto @Noname_1620
+
+:Noname_1527
+Text.PrintFormattedNow("~s~Digite o nome: '~y~%s~s~.dff'~n~'ID %d' encontrado. Press Enter para spawnar.", 100, 0@, 20@)
+
+:Noname_1620
+if 
+  Pad.IsKeyPressed(KeyCode.Return)
+goto_if_false @Noname_1643
+set_lvar_int_to_lvar_int 14@ = 20@
+
+:Noname_1643
+goto @Noname_1764
+
+:Noname_1650
+if 
+  29@, 20@ = Text.ScanString(0@, "ID%i")
+goto_if_false @Noname_1764
+if and
+  20@ > 1
+  not is_int_lvar_greater_or_equal_to_int_lvar 20@ >= 19@
+goto_if_false @Noname_1764
+if 
+  Streaming.IsModelInCdimage(20@)
+goto_if_false @Noname_1764
+23@ = Memory.CallFunctionReturn(4210080, 1, 1, 20@)
+if 
+  23@ > 0
+goto_if_false @Noname_1764
+goto @Noname_1338
+
+:Noname_1764
+return 
+
+:Noname_1766
+10@ = Memory.GetVehiclePointer(0@)
+int_add 9@ = 10@ + 1428
+9@ = Memory.Read(9@, 4, False)
+if or
+  9@ == 9
+  9@ == 10
+goto_if_false @Noname_1904
+int_add 4@ = 10@ + 20
+4@ = Memory.Read(4@, 4, False)
+int_add 5@ = 4@ + 48
+Memory.Write(5@, 4, 1@, False)
+5@ += 4
+Memory.Write(5@, 4, 2@, False)
+5@ += 4
+Memory.Write(5@, 4, 3@, False)
+
+:Noname_1904
+cleo_return 0 {retParams} 
+
+:Noname_1909
+30@ = Memory.GetLabelPointer(@Noname_1965)
+30@ = Memory.Read(30@, 1, False)
+if 
+  30@ == 2
+goto_if_false @Noname_1958
+  Game.IsPcVersion
+goto @Noname_1960
+
+:Noname_1958
+  Game.IsAustralian
+
+:Noname_1960
+cleo_return 0 {retParams} 
+
+:Noname_1965
+hex
+ 00
+end
+
+:Noname_1966
+hex
+ 00(9)
+end
